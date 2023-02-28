@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Carrinho de Compras</title>
+    <style>
+      /* Definição de estilo para o container */
+      .container {
+        width: 500px;
+        margin: 20px auto;
+        text-align: center;
+      }
+      
+      /* Definição de estilo para a tabela */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        border: 1px solid #333;
+        padding: 10px;
+      }
+      
+      th {
+        background-color: #333;
+        color: #fff;
+      }
+      
+      /* Definição de estilo para os botões */
+      .btn {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Carrinho de Compras</h1>
+      <table id="cart">
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Produto 1</td>
+            <td>R$ 10,00</td>
+            <td>
+              <input type="number" value="1">
+            </td>
+            <td>R$ 10,00</td>
+            <td>
+              <a href="#" class="btn">Remover</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Produto 2</td>
+            <td>R$ 20,00</td>
+            <td>
+              <input type="number" value="1">
+            </td>
+            <td>R$ 20,00</td>
+            <td>
+              <a href="#" class="btn">Remover</a>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"></td>
+            <td><strong>R$ 30,00</strong></td>
+            <td>
+              <a href="#" class="btn">Finalizar Compra</a>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>

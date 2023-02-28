@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>ELABORE</title>
+<link rel="stylesheet" href="{{url_for('static',filename='css/singlePageTemplate.css')}}">
+
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header> <a href="">
+    <h4 class="logo">ELABORE</h4>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#hero">HOME</a></li>
+		    <li><a href="/login">LOGIN</a></li>
+        <li><a href="#about">SERVIÇOS</a></li>
+        <li><a href="/aula">CONTATO</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h2 class="hero_header"span class="light">ELABORE</span></h2>
+    <p class="tagline">O SEU LUGAR DE TECNOLOGIA</p>
+  </section>
+  <section class="about" id="about">
+    <div class="div1">
+      <h1 class="stats">SERVIÇOS DE DESENVOLVIMENTO</h1> 
+    </div>
+   <!-- About Section -->
+  
+      <h2 class="hidden">About</h2>
+    
+      <p class="text_column">Se você está procurando criar um site para o seu negócio, está no lugar certo! Nós oferecemos serviços de criação de sites personalizados, que atendem às suas necessidades específicas.
+
+      Nossa equipe de desenvolvimento web é composta por especialistas em todas as áreas do desenvolvimento de sites, incluindo design, desenvolvimento, implementação e otimização para controle de busca. Trabalharemos em estreita colaboração com você para entender suas necessidades e objetivos de negócios, para que possamos criar um site que atenda aos seus requisitos e exceda suas expectativas.
+      
+      Oferecemos uma ampla gama de serviços de desenvolvimento web, desde a criação de sites simples e informativos até sites mais complexos com recursos avançados, como lojas virtuais, gerenciamento de conteúdo, e-commerce e muito mais.
+      
+      Também nos orgulhamos de fornecer um serviço personalizado e de alta qualidade a preços competitivos. Com nossa abordagem focada no cliente e nossa vasta experiência em desenvolvimento web, estamos confiantes de que podemos fornecer a você o site perfeito para o seu negócio.
+      
+      Não perca mais tempo com sites amadores ou genéricos. Entre em contato conosco hoje mesmo para obter uma cotação e começar a criar um site incrível que ajude a sustentar seu negócio!</p>
+    
+      <p class="text_column">meu conteudo 2 aqui</p>
+    
+    <p class="text_column">meu conteudo 3 aqui
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail">
+      <h1 class="stats">1500</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">2300</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">7500</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">9870</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+  </div>
+  <!-- Parallax Section -->
+  <section class="banner">
+    <h2 class="parallax">PARALLAX HERO</h2>
+    <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+  </section>
+  <!-- More Info Section -->
+  <footer>
+    <article class="footer_column">
+      <h3>ABOUT</h3>
+      <img src="images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+    </article>
+    <article class="footer_column">
+      <h3>LOCATION</h3>
+      <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+            var setting = {"height":300,"width":500,"zoom":17,"queryString":"Elabore - Rua Dois - Vila Brasil, Anápolis - GO, Brasil","place_id":"ChIJJzmpEo-jXpMRMQZngdkWG8s","satellite":false,"centerCoord":[-16.32761090465203,-48.96742124999999],"cid":"0xcb1b16d981670631","lang":"pt","cityUrl":"/brazil/abadiania-272002","cityAnchorText":"","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"878591"};
+            var d = document;
+            var s = d.createElement('script');
+            s.src = 'https://1map.com/js/script-for-user.js?embed_id=878591';
+            s.async = true;
+            s.onload = function (e) {
+              window.OneMap.initMap(setting)
+            };
+            var to = d.getElementsByTagName('script')[0];
+            to.parentNode.insertBefore(s, to);
+          })();</script><a href="https://1map.com/pt/map-embed">1 Map</a></div>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+    </article>
+  </footer>
+
+  <!-- Footer Section -->
+  <section class="footer_banner" id="contact">
+    <h2 class="hidden">Footer Banner Section </h2>
+    <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
+    <a href='/login'style="text-decoration:none"><div class="button" >COLABORADORES</div></a>
+  </section>
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2022 - <strong>DEV-RO</strong></div>
+</div>
+<!-- Main Container Ends -->
+</body>
+</html>
