@@ -8,6 +8,13 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/compra')
+def compra():
+    return render_template('compra.html')
+
+@app.route('/aula')
+def aula():
+    return render_template('aula.html')
 
 @app.route('/login', methods=['GET','POST'])
 def login():
@@ -20,7 +27,6 @@ def login():
      password = request.form.get('password')
 
         # Adicione sua lógica de autenticação aqui
-
     
     if username == usuario and password == senha or username == usuario1 and password == senha1 :
       return render_template('usuario.html')
@@ -31,5 +37,6 @@ def login():
 def error(nome):
     variavel= f'Página ({nome}) Não Existe'
     return render_template("error.html",variavel2=variavel)
+
 
 app.run(debug=True)
