@@ -23,6 +23,10 @@ nav{
     text-align: 'center';
     
 }
+.navbar-nav {
+  text-align: center;
+  align-items: center;
+}
 header nav ul {
 	list-style: none;
 	float: center;
@@ -31,9 +35,10 @@ nav ul li {
 	float: right;
 	color: #FFFFFF;
 	font-size: 14px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 	text-align: center;
 	margin-right: 25px;
-    margin-bottom: inherit;
+  margin-bottom: inherit;
 	letter-spacing: 2px;
 	font-weight: bold;
 	transition: all 0.3s linear;
@@ -49,5 +54,5 @@ ul li:hover a {
 .container{
   background-color: rgb(255, 0, 0);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+ 
 }
