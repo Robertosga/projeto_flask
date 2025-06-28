@@ -3,30 +3,65 @@
 <head>
 <meta charset="utf-8">
 <title>ELABORE</title>
-<link rel="stylesheet" href="{{url_for('static',filename='css/singlePageTemplate.css')}}">
-
+<link rel="stylesheet" href="{{url_for('static',filename='static/css/stilo.css')}}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
-<!-- Main Container -->
-<div class="container"> 
-  <!-- Navigation -->
-  <header> <a href="">
-    <h4 class="logo">ELABORE</h4>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="font-size: 16px; font-family: Helvetica;">
+    <a class="navbar-brand"><img src="static/css/imagens/lg2.png" style="width: 200px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNav" >
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" >HOME</a>
+                    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">LOGIN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/webs">WEB SITES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">SERVIÇOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/ia">IA</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/aula">CONTATO</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="static/css/imagens/fundo.png" alt="Primeiro Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="static/css/imagens/fundo.jpg" alt="Segundo Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/carroussell/c3.png" alt="Terceiro Slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
     </a>
-    <nav>
-      <ul>
-        <li><a href="#hero">HOME</a></li>
-		    <li><a href="/login">LOGIN</a></li>
-        <li><a href="#about">SERVIÇOS</a></li>
-        <li><a href="/aula">CONTATO</a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <h2 class="hero_header"span class="light">ELABORE</span></h2>
-    <p class="tagline">O SEU LUGAR DE TECNOLOGIA</p>
-  </section>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+      </div>
+  
   <section class="about" id="about">
     <div class="div1">
       <h1 class="stats">SERVIÇOS DE DESENVOLVIMENTO</h1> 
@@ -35,16 +70,13 @@
   
       <h2 class="hidden">About</h2>
     
-      <p class="text_column">Se você está procurando criar um site para o seu negócio, está no lugar certo! Nós oferecemos serviços de criação de sites personalizados, que atendem às suas necessidades específicas.
+      <p class="text_column">
 
-      Nossa equipe de desenvolvimento web é composta por especialistas em todas as áreas do desenvolvimento de sites, incluindo design, desenvolvimento, implementação e otimização para controle de busca. Trabalharemos em estreita colaboração com você para entender suas necessidades e objetivos de negócios, para que possamos criar um site que atenda aos seus requisitos e exceda suas expectativas.
+        
+        <iframe name="content" src="texto1.html" frameborder="0" width="350px" height="550px"></iframe>
+        
+      </p>
       
-      Oferecemos uma ampla gama de serviços de desenvolvimento web, desde a criação de sites simples e informativos até sites mais complexos com recursos avançados, como lojas virtuais, gerenciamento de conteúdo, e-commerce e muito mais.
-      
-      Também nos orgulhamos de fornecer um serviço personalizado e de alta qualidade a preços competitivos. Com nossa abordagem focada no cliente e nossa vasta experiência em desenvolvimento web, estamos confiantes de que podemos fornecer a você o site perfeito para o seu negócio.
-      
-      Não perca mais tempo com sites amadores ou genéricos. Entre em contato conosco hoje mesmo para obter uma cotação e começar a criar um site incrível que ajude a sustentar seu negócio!</p>
-    
       <p class="text_column">meu conteudo 2 aqui</p>
     
     <p class="text_column">meu conteudo 3 aqui
@@ -111,7 +143,11 @@
   </section>
   <!-- Copyrights Section -->
   <div class="copyright">&copy;2022 - <strong>DEV-RO</strong></div>
-</div>
-<!-- Main Container Ends -->
+ </div>
+ <!-- Main Container Ends -->
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </html>
